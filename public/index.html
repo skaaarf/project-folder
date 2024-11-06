@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Distance Game</h1>
+    <p>Choose a number, search a location if needed, and click multiple times on the map to select your locations. Once done, click "Confirm Locations" to calculate the distance to the random target.</p>
+    
+    <label for="location-number">Choose a location number:</label>
+    <select id="location-number">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <!-- 他の地点も追加可能 -->
+    </select>
+    <button onclick="setLocation()">Confirm Number</button>
+    
+    <br><br>
+
+    <label for="search-input">Search Location:</label>
+    <input type="text" id="search-input" placeholder="Enter location">
+    <button onclick="searchLocation()">Search</button>
+
+    <div id="map"></div>
+    <button onclick="confirmLocations()">Confirm Locations</button>
+    <p id="distance-output"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

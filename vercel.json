@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "env": {
+        "GOOGLE_MAPS_API_KEY": "@google-maps-api-key"
+    },
+    "rewrites": [
+        { "source": "/api/(.*)", "destination": "/api/myapi.js" }
+    ]
+}

@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 80vh;
+    width: 100%;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+}
+
+#distance-output {
+    font-size: 1.2em;
+    color: #333;
+}
